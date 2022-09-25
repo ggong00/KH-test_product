@@ -29,19 +29,19 @@ public class ProductSVCImpl implements ProductSVC{
 
   //조회
   @Override
-  public Optional<Product> findByProductId(Long productId) {
-    return productDAO.findByProductId(productId);
+  public Optional<Product> findBypid(Long pid) {
+    return productDAO.findBypid(pid);
   }
 
   //수정
   @Override
-  public int update(Long productId, Product product) {
-    return productDAO.update(productId,product);
+  public int update(Long pid, Product product) {
+    return productDAO.update(pid,product);
   }
 
   //삭제
   @Override
-  public int deleteByProductId(Long productId) {
-    return productDAO.deleteByProductId(productId);
+  public int deleteBypid(Long pid) {
+    return productDAO.deleteBypid(pid);
   }
 }

@@ -6,13 +6,13 @@ import javax.validation.constraints.*;
 
 @Data
 public class UpdateForm {
-  private Long productId;
+  private Long pid;
   @NotBlank
   private String pname;     //  PNAME	VARCHAR2(30 BYTE)
   @NotNull
   @Positive
   @Max(9999999999L)
-  private Long quantity;    //  QUANTITY	NUMBER(10,0)
+  private Long count;    //  count	NUMBER(10,0)
   @NotNull
   @Positive
   @Max(9999999999L)
